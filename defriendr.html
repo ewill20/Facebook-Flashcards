@@ -39,12 +39,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <p id="email-label"> Email or Phone:<br>
-                                <input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email">
+                                <p id="email-label">  Email or Phone:<br>
+                                    <input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email">
                             </td>
                             <td>
                                 <p id="password-label"> Password:<br>
-                                <input type="password" class="inputtext" name="pass" id="password" tabindex="2" data-testid="royal_pass">
+                                    <input type="password" class="inputtext" name="pass" id="password" tabindex="2" data-testid="royal_pass">
                             </td>
                             <td>
                                 <label class="btn btn-default" id="loginButton">Login</label>
@@ -53,45 +53,72 @@
                     </tbody>
                 </table>
                 </form>
-                </div>
             </div>
+        </div>
         </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row spacer"></div>
         <div class="row main-content">
-            <div class="col-lg-4"></div>
-                <div class="text-center">
-                    <div class="col-lg-4">
-                        <div class="flip-container">
-                            <div class="flipper" ontouchstart="this.classList.toggle('click');">
-                                <div class="front">
-                                    <div class="panel panel-default text-center flashcard">
-                                        <div class="panel panel-header friend-name">
-                                            Name
-                                        </div>
+            <div class="col-lg-4">
+                    <button type="button" class="btn btn-default btn-arrow-left"><span class="glyphicon glyphicon-menu-left"</span></button>                    
+            </div>
+            <div class="text-center">
+                <div class="col-lg-4">
+                    <!-- <div id="card"> -->
+                    <div class="flip-container">
+                        <div class="flipper" ontouchstart="this.classList.toggle('active');">
+                            <div class="front">
+                                <div class="panel panel-default text-center flashcard">
+                                    <div class="panel panel-header friend-name">
+                                        Name
+                                    </div>
+                                    <div class="panel panel-body profile-photo">
                                         <img id="profile-picture" src="" alt="friend's-profile-photo">
-                                    </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="panel panel-default backside-hints">
+                                    <div class="panel panel-header hints">
+                                        Hints
+                                    </div>
+                                    <div class="panel panel-body hints">
+                                        <p class="different-hints align-center">
+                                            1. Enter Your Friend's Name <br>                                  
+                                            <input type="text"><br>
+                                            2. What Is Your Friend's Hometown? <br>
+                                            <input type="text"><br>
+                                            3. Where Does Your Friend Live Now? <br>
+                                            <input type="text">
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <button id="right" type="button" class="btn btn-default btn-arrow-right left"><span class="glyphicon glyphicon-menu-right"</span></button> 
+                        
                 </div>
             </div>
+        </div>
 
 
 
 
         <!-- SCRIPTS -->
         <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="js/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script src="public/js/app.js"></script>
 </body>
 
 </html>

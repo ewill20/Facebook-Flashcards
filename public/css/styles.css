@@ -1,4 +1,12 @@
-
+body {
+    margin: none;
+    background-color: white;
+    background: url("../../images/white-texture-background.jpg");
+    background-size: cover;
+}
+.profile-photo {
+    height: 100%;
+}
 .spacer {
     height: 150px;
 }
@@ -21,25 +29,48 @@
 }
 .flashcard {
     height: 450px;
-    width: 100%;
+    width: 400px;
+}
+.backside-hints {
+    height: 450px;
+    width: 400px;
+}
+.different-hints {
+    margin-bottom: 10px;
+    height: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .login {
     position: relative;
     float: right;
     left: 600px;
     top: 10px;
-    
+    margin-left: 10px;
 }
-.btn-default {
-   margin-left: 10px;
-    background-color: #3b5998;
+#loginButton {
+    background-color: #3b5998 !important;
     color: white;
     float: right; 
     height: 27px;
     padding-top: 3px;
     padding-bottom: 10px; 
     position: relative;
-    top: 5px;  
+    top: 5px; 
+    margin-left: 5px;
+}
+.btn-arrow-right {
+    position: relative;
+    top: -100px;
+    right: -200px;
+    background-color: #3b5998;
+    color: white;
+}
+.btn-arrow-left {
+    position: relative;
+    top: 210px;
+    right: -450px;
+    background-color: #3b5998;
+    color: white;
 }
 #email {
     margin-right: 5px;
@@ -49,6 +80,81 @@
 }
 #email-label, #password-label {
     color: white;
+}
+.flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
+    -webkit-transition-delay: .5s; /* Safari */
+    transition-delay: .5s;
+}
+.flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+/* flip the pane when hovered */
+/*
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}*/
+.flip-container,
+.front,
+.back {
+  width: 250px;
+  height: 275px;
+  margin-bottom: 40px;
+}
+/* flip speed
+goes here */
+
+.flipper {
+  -webkit-transition: 0.65s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.65s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.65s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.65s;
+	transform-style: preserve-3d;
+  
+  position: relative;
+}
+/* hide back of pane during swap */
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+
+.back {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 

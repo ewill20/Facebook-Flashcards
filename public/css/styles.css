@@ -23,4 +23,33 @@
     height: 400px;
     width: 100%;
 }
+.login {
+    position: relative;
+    float: right;
+    left: 600px;
+    top: 10px;
+    
+}
+.btn-default {
+   margin-left: 10px;
+    background-color: #3b5998;
+    color: white;
+    float: right; 
+    height: 27px;
+    padding-top: 3px;
+    padding-bottom: 10px; 
+    position: relative;
+    top: 5px;  
+}
+#email {
+    margin-right: 5px;
+}
+#password {
+    margin-left: 5px;
+}
+#email-label, #password-label {
+    color: white;
+}
+
+
 

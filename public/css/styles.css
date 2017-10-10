@@ -1,5 +1,7 @@
-.navbar-header {
-    background-color: #3b5998;
-    font: san francisco;
-    color: white;
+
+.spacer {
+    height: 150px;
+}
+.navbar-default {
+    padding-bottom: 10px;
 }

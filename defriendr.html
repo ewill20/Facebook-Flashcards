@@ -11,7 +11,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="MDB/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="public/css/styles.css" rel="stylesheet">
 
@@ -58,17 +58,19 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row spacer"></div>
-        <div class="row main-content">
-            <div class="col-lg-4">
-                    <button type="button" class="btn btn-default btn-arrow-left"><span class="glyphicon glyphicon-menu-left"</span></button>                    
-            </div>
-            <div class="text-center">
-                <div class="col-lg-4">
-                    <!-- <div id="card"> -->
+    <div class="container">
+        <!-- <div class="row spacer"></div> -->
+        <div class="row align-items-center main-content">
+            <!-- <div class="col-4 spacer">
+                bullshit
+            </div> -->
+            <div class="col-lg-1 col-lg-offset-3">
+                    <button  type="button" class="btn btn-default btn-arrow-left"><span class="glyphicon glyphicon-menu-left"</span></button>  
+                        <!-- ontouchstart="this.classList.toggle('active');" -->
+                    </div> 
+                <div class="col-lg-4 align-items-center">                         
                     <div class="flip-container">
-                        <div class="flipper" ontouchstart="this.classList.toggle('active');">
+                        <div class="flipper">
                             <div class="front">
                                 <div class="panel panel-default text-center flashcard">
                                     <div class="panel panel-header friend-name">
@@ -98,10 +100,10 @@
                             </div>
                         </div>
                     </div>
-                    <button id="right" type="button" class="btn btn-default btn-arrow-right left"><span class="glyphicon glyphicon-menu-right"</span></button> 
-                        
                 </div>
-            </div>
+                <div class="col-lg-1 right-Button">
+                <button id="right" type="button" class="btn btn-default btn-arrow-right"><span class="glyphicon glyphicon-menu-right"</span></button>      
+                </div>    
         </div>
 
 
@@ -113,11 +115,11 @@
             crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
         <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="MDB/js/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
         <script src="public/js/app.js"></script>
 </body>
 

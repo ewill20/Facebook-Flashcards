@@ -1,3 +1,5 @@
+
+
 $(".flipper").flip({
     trigger: 'manual'
 
@@ -6,7 +8,7 @@ $(".flipper").flip({
 $(".btn-arrow-left").click(function(){
     $(".flipper").flip({reverse: true});
     $(".flipper").flip('toggle');
-     
+    $(".back2").show(); 
     });
 
 

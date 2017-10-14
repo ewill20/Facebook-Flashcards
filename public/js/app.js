@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".back").hide();
     $(".back2").hide();
-})
+});
 
 $(".flipper").flip({
     trigger: 'manual'
@@ -10,7 +10,10 @@ $(".flipper").flip({
 
 $(".btn-arrow-left").click(function(){
     $(".flipper").flip({reverse: true});
-    $(".flipper").flip('toggle');
+    $(".flipper").flip('toggle',
+    function () {
+        alert("it's flipped");
+    });
     $(".back2").show();
     $(".btn-arrow-left").on("toggle", function() {
         $(".back2").hide();

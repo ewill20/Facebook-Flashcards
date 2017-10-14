@@ -10,7 +10,7 @@ body {
 .spacer {
     height: 150px;
 }
-.navbar-default {
+.navbar {
     padding-bottom: 30px;
     padding-top: 40px;
     background-color: #3b5998;
@@ -62,6 +62,7 @@ body {
 }
 .btn-arrow-right {
     width: 100%;
+    float: right;
     position: relative;
     top: 195px;
     background-color: #3b5998;
@@ -171,24 +172,26 @@ goes here */
     -o-transform: rotateY(-180deg);
       transform: rotateY(-180deg);
   } */
-@media only screen 
-    and (min-device-width: 375px)
-    and (max-device-width: 667px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-        body, .main-content
- {
-        width: 100%;
- }     
-}
+
 @media only screen 
 and (min-device-width: 1200px) 
 and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 2)
+/* and (-webkit-min-device-pixel-ratio: 2) */
 and (min-resolution: 192dpi) { 
-     .main-content
+     .flipper .navbar-default
     {
-           width: 33.3%;
+           width: 100%;
     } 
+}
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1199px)
+/* and (-webkit-min-device-pixel-ratio: 2) */
+     {
+    .flipper .navbar-default
+    {
+        width: 66%;
+    }
 }
 
 

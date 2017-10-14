@@ -18,7 +18,7 @@ $(document).ready(function() {
 		for (var i = 0; i < defriendArray.length; i++) {
 			rowsToAdd.push(createNewRow(defriendArray[i]));
 		}
-		$defriendContainer.prepent(rowsToAdd);
+		$defriendContainer.prepend(rowsToAdd);
 	}
 
 	//grabs defriend list from the database and updates to the view
@@ -35,7 +35,7 @@ $(document).ready(function() {
 		var id = $(this).data("id");
 		$.ajax({
 			method: "DELETE",
-			url: "/api/defriendArray/" + id 
+			url: "/api/defriendArray/" + id
 		}).done(getDefriendList);
 	}
 

@@ -109,7 +109,7 @@ $(".btn-arrow-right").click(function() {
 			"<input type='text' class='edit' style='display: none;'>",
 			"<button class='delete btn btn-default'>x</button>",
 			"</li>"
-			].join(""0)
+			].join("")
 		);
 
 		$newInputRow.find("button.delete").data("id", defriend.id);

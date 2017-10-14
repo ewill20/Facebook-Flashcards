@@ -2,7 +2,11 @@
 //sets up the Facebook NPM
 var FB = require('fb'),
     //a constructor if we need options (probabily the permisions)
+<<<<<<< HEAD
     fb = new FB.Facebook(options);
+=======
+    fb = new FB.Facebook();
+>>>>>>> master
     //the id for the specific friend
     var defriendID;
     //the object that holds all of the specific info
@@ -38,8 +42,16 @@ var fbPackaging = {
           if (response && !response.error) {
             //the path to the summery count
             var friendCount = response.summery.totalcount;
+<<<<<<< HEAD
             //picks a random friend id through on the list
             defriendID = Math.floor(Math.random() * friendCount);
+=======
+            console.log(friendCount);
+            //picks a random friend id through on the list
+            defriendID = Math.floor(Math.random() * friendCount);
+            console.log(defriendID);
+
+>>>>>>> master
           }
         }
       );
@@ -102,8 +114,11 @@ var fbPackaging = {
 };
 
 
+<<<<<<< HEAD
 }
 
 
+=======
+>>>>>>> master
 
 module.exports = fbPackaging;

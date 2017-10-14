@@ -1,0 +1,197 @@
+body {
+    margin: none;
+    background-color: white;
+    background: url("../../images/white-texture-background.jpg");
+    background-size: cover;
+}
+.profile-photo {
+    height: 100%;
+}
+.spacer {
+    height: 150px;
+}
+.navbar {
+    padding-bottom: 30px;
+    padding-top: 40px;
+    background-color: #3b5998;
+}
+#favicon-brand {
+    position: relative;
+    top: -25px;
+    left: 60px;
+}
+#title {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 230px;
+}
+.flashcard {
+    height: 450px;
+    width: 100% !important;
+}
+.backside-hints {
+    height: 450px;
+    width: 100%;
+}
+.different-hints {
+    margin-bottom: 10px;
+    height: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.login {
+    position: relative;
+    float: right;
+    left: 600px;
+    top: 10px;
+    margin-left: 10px;
+}
+#loginButton {
+    background-color: #3b5998 !important;
+    color: white;
+    float: right; 
+    height: 25px;
+    padding-top: 3px;
+    padding-bottom: 10px; 
+    position: relative;
+    top: 5px; 
+    margin-left: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11px;
+}
+.btn-arrow-right {
+    width: 100%;
+    float: right;
+    position: relative;
+    top: 195px;
+    background-color: #3b5998;
+    color: white;
+}
+.btn-arrow-left {
+    width: 100%;
+    position: relative;
+    top: 195px;
+    background-color: #3b5998;
+    color: white;
+}
+/* #left {
+    align-content: center;
+} */
+#email {
+    margin-right: 5px;
+}
+#password {
+    margin-left: 5px;
+}
+#email-label, #password-label {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+}
+/* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
+    -webkit-transition-delay: .3s; /* Safari */
+    /* transition-delay: .3s;
+} */
+/* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+} */
+/* .flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+} */ 
+/* flip the pane when hovered */
+/*
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}*/
+/* .flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 275px;
+  margin-bottom: 40px;
+} */
+
+/* flip speed
+goes here */
+/* 
+.flipper {
+  -webkit-transition: 0.65s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.65s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.65s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.65s;
+	transform-style: preserve-3d;
+  
+  position: relative;
+} */
+/* hide back of pane during swap */
+
+/* .front,
+.back, .back2 {
+  -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* front pane, placed above back */
+
+/* .front {
+  z-index: 2;
+  /* for firefox 31 */
+  /* transform: rotateY(0deg);
+} */ 
+/* back, initially hidden pane */
+
+/* .back {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+} */
+/* .back2 {
+    -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+  } */
+
+@media only screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+/* and (-webkit-min-device-pixel-ratio: 2) */
+and (min-resolution: 192dpi) { 
+     .flipper .navbar-default
+    {
+           width: 100%;
+    } 
+}
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1199px)
+/* and (-webkit-min-device-pixel-ratio: 2) */
+     {
+    .flipper .navbar-default
+    {
+        width: 66%;
+    }
+}
+
+

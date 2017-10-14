@@ -1,4 +1,54 @@
 $(document).ready(function() {
+<<<<<<< HEAD
+    $(".back").hide();
+    $(".back2").hide();
+});
+
+$(".flipper").flip({
+    trigger: 'manual'
+
+});
+
+$(".btn-arrow-left").click(function(){
+    $(".flipper").flip({reverse: true});
+    $(".flipper").flip('toggle',
+    function () {
+        alert("it's flipped");
+    });
+    $(".back2").show();
+    $(".btn-arrow-left").on("toggle", function() {
+        $(".back2").hide();
+    })
+    });
+
+
+$(".btn-arrow-right").click(function() {
+    $(".flipper").flip({reverse: false});
+    $(".flipper").flip('toggle');
+    $(".back").show();
+    $(".btn-arrow-right").on("toggle", function() {
+        $('.back').hide();
+    })
+});
+
+// $(".btn-arrow-left").on("click", function() {
+//     display();
+
+// $(".btn-arrow-right").on("click", function() {
+//     display();
+// })    
+
+// function display() {
+//     if(".btn-arrow-left") {
+//         $(".back").html();
+//     } 
+//     if(".btn-arrow-right") {
+//         $(".back2").html();
+//     }
+// };
+
+// })
+=======
 	//add to the defriend list and view in the defriendContainer
 	var $defriendContainer = $(".defriend-container");
 	//event listeners for deleting and adding to the defriend list
@@ -18,7 +68,7 @@ $(document).ready(function() {
 		for (var i = 0; i < defriendArray.length; i++) {
 			rowsToAdd.push(createNewRow(defriendArray[i]));
 		}
-		$defriendContainer.prepent(rowsToAdd);
+		$defriendContainer.prepend(rowsToAdd);
 	}
 
 	//grabs defriend list from the database and updates to the view
@@ -35,7 +85,7 @@ $(document).ready(function() {
 		var id = $(this).data("id");
 		$.ajax({
 			method: "DELETE",
-			url: "/api/defriendArray/" + id 
+			url: "/api/defriendArray/" + id
 		}).done(getDefriendList);
 	}
 
@@ -59,7 +109,7 @@ $(document).ready(function() {
 			"<input type='text' class='edit' style='display: none;'>",
 			"<button class='delete btn btn-default'>x</button>",
 			"</li>"
-			].join(""0)
+			].join("")
 		);
 
 		$newInputRow.find("button.delete").data("id", defriend.id);
@@ -84,3 +134,4 @@ $(document).ready(function() {
 
 
 });
+>>>>>>> d4f906a9c50d368d6e16bf1989d0937437d9f0d2

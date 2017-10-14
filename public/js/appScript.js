@@ -3,13 +3,14 @@
 var FB = require('fb'),
     //a constructor if we need options (probabily the permisions)
     fb = new FB.Facebook(options);
-
+    //the id for the specific friend
+    var defriendID;
+    //the object that holds all of the specific info
+    var randoInfo;
 //This is to test login status
 var fbPackaging = {
-  //the id for the specific friend
-  var defriendID;
-  //the object that holds all of the specific info
-  var randoInfo;
+
+
   //This is to test login status
   login : function() {
     //built in function to test if we are connected

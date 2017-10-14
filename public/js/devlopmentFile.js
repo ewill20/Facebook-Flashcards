@@ -1,4 +1,3 @@
 var fbPack = require("./appScript.js");
-var dummyToken = $EAAB0ZAVlzdGIBAFZBWTHZBllqUClU6B6WIWcc39hlS9VRdtWHtzBT7d1nRmvcdAbhysSvECt0pHeCd2gesC16sgBZBGUjgHOLAmf2Vxg4Lbx6FZBfLsc6GRfwVFkAZAaepZCriYdvbChzepwLGoVzfFYZCblOjnjTdLedC3aDCQpCUITyLPZAX3bOYDhNMcPcqZC5Msc9J3wDVpqOGMdWZCXoR5dZCosNkAckozMyRXq0uhWowZDZD = $helper->getAccessToken();
 
-fbPack.identify();
+console.log(fbPack)

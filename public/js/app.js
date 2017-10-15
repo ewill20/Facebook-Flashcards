@@ -10,10 +10,7 @@ $(".flipper").flip({
 
 $(".btn-arrow-left").click(function(){
     $(".flipper").flip({reverse: true});
-    $(".flipper").flip('toggle',
-    function () {
-        alert("it's flipped");
-    });
+    $(".flipper").flip('toggle');
     $(".back2").show();
     $(".btn-arrow-left").on("toggle", function() {
         $(".back2").hide();

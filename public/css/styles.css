@@ -90,6 +90,12 @@ body {
     font-size: 12px;
     margin: 0 5px 0 5px;
 }
+.login-Message {
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: inline;
+    color: #3b5998;
+}
 /* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
     -webkit-transition-delay: .3s; /* Safari */
     /* transition-delay: .3s;
@@ -178,7 +184,7 @@ and (min-device-width: 1200px)
 and (max-device-width: 1600px) 
 /* and (-webkit-min-device-pixel-ratio: 2) */
 and (min-resolution: 192dpi) { 
-     .flipper .navbar-default
+     .flipper .navbar
     {
            width: 100%;
     } 
@@ -188,10 +194,18 @@ and (min-device-width: 768px)
 and (max-device-width: 1199px)
 /* and (-webkit-min-device-pixel-ratio: 2) */
      {
-    .flipper .navbar-default
+    .flipper .navbar
     {
         width: 66%;
     }
+}
+@media screen 
+    and (max-device-width: 768px)
+    {
+        .navbar
+        {
+            width: 100%;
+        }
 }
 
 

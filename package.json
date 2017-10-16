@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/ewill20/Facebook-Flashcards/issues"
   },
-  "homepage": "https://github.com/ewill20/Facebook-Flashcards#readme"
+  "homepage": "https://github.com/ewill20/Facebook-Flashcards#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "mysql2": "^1.4.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.13.15"
+  }
 }

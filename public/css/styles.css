@@ -95,6 +95,16 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     display: inline;
     color: #3b5998;
+    position: relative;
+    top: 200px;
+}
+.defriend {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #3b5998;
+    text-align: center;
+}
+#defriend-Button {
+    display: none;
 }
 /* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
     -webkit-transition-delay: .3s; /* Safari */
@@ -146,7 +156,6 @@ goes here */
 } */
 /* hide back of pane during swap */
 
-/* .front,
 .back, .back2 {
   -webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -155,7 +164,7 @@ goes here */
   position: absolute;
   top: 0;
   left: 0;
-} */
+}
 
 /* front pane, placed above back */
 

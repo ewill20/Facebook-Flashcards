@@ -41,8 +41,60 @@
     </nav>
     <div class="container">
         <div class="row align-items-center main-content">
-            
-                                    
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-arrow-left"><span class="glyphicon glyphicon-menu-left"</span></button>
+                <!-- ontouchstart="this.classList.toggle('active');" -->
+            </div>
+            <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 col-xl-6 align-items-center">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="panel panel-default text-center flashcard">
+                                <div class="panel panel-header friend-name">
+                                    Name
+                                </div>
+                                <div class="panel panel-body profile-photo">
+                                    <img id="profile-picture" src="" alt="friend's-profile-photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="panel panel-default backside-hints">
+                                <div class="panel panel-header hints text-center">
+                                    Hints
+                                </div>
+                                <div class="panel panel-body hints">
+                                    <p class="different-hints align-center">
+                                        1. Enter Your Friend's Name <br>
+                                        <input type="text"><br> 2. What Is Your Friend's Hometown? <br>
+                                        <input type="text"><br> 3. Where Does Your Friend Live Now? <br>
+                                        <input type="text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back2">
+                            <div class="panel panel-default backside-defriend">
+                                <div class="panel panel-header defriend">
+                                    defriend Options
+                                </div>
+                                <div class="panel panel-body defriend-Options">
+                                    <p class="different-Options align-center">
+                                        1. Would You Like To Add This Friend To Your "defriend" List? <br>
+                                        <button type="button" id="defriend-Button" class="btn btn-outline-primary btn-rounded waves-effect">defriend</button>
+                                        <br>
+                                         2. Would You Like To Add This Friend To Your "Block" List?
+                                        <br>
+                                        <button type="button" id="defriend-Button" class="btn btn-outline-primary btn-rounded waves-effect">Block</button>
+                                        <br>
+                                         3. Skip This Friend For Now 
+                                         <br>
+                                        <button type="button" id="defriend-Button" class="btn btn-outline-primary btn-rounded waves-effect">Skip</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2 right-Button">

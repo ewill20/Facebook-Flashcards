@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".back").hide();
     $(".back2").hide();
+    $(".defriend-Button").hide();
 });
 
 $(".flipper").flip({
@@ -11,9 +12,11 @@ $(".flipper").flip({
 $(".btn-arrow-left").click(function(){
     $(".flipper").flip({reverse: true});
     $(".flipper").flip('toggle');
-    $(".back2").show();
+    $(".back2").show(".different-Options");
     $(".btn-arrow-left").on("toggle", function() {
         $(".back2").hide();
+        
+       
     })
     });
 
@@ -21,9 +24,10 @@ $(".btn-arrow-left").click(function(){
 $(".btn-arrow-right").click(function() {
     $(".flipper").flip({reverse: false});
     $(".flipper").flip('toggle');
-    $(".back").show();
+    $(".back").show(".different-hints");
     $(".btn-arrow-right").on("toggle", function() {
         $('.back').hide();
+        
     })
 });
 

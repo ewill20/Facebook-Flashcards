@@ -1,3 +1,3 @@
 var fbPack = require("./appScript.js");
 
-console.log(fbPack.identify())
+console.log(fbPack.friendInfo())

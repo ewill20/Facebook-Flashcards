@@ -1,7 +1,16 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) { 
 	var Defriend = sequelize.define("Defriend", {
-		text: DataTypes.STRING,
-		complete: DataTypes.BOOLEAN
+		text: {
+			type: DataTypes.STRING,
+			allowNull: false,
+			validate: {
+				len: [1, 50]
+			}
+		},
+		complete: {
+			type: DataTypes.BOOLEAN,
+			defaultValue: false
+		}
 	});
 	return Defriend;
 };

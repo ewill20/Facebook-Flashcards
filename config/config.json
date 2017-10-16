@@ -1,15 +1,15 @@
 {
     "development": {
         "username": "root",
-        "password": "",
-        "database": "Facebook-Flashcards_db",
+        "password": null,
+        "database": "defriend_list",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
         "username":"root",
         "password": null,
-        "database":"Facebook-Flashcards_db",
+        "database":"database_test",
         "host":"127.0.0.1",
         "dialect":"mysql"
     },

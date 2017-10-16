@@ -61,19 +61,22 @@ body {
     font-size: 11px;
 }
 .btn-arrow-right {
-    width: 100%;
     float: right;
     position: relative;
     top: 195px;
+    left: 20px;
+    width: 100px;
     background-color: #3b5998;
-    color: white;
+    color: white !important;
 }
 .btn-arrow-left {
-    width: 100%;
     position: relative;
     top: 195px;
+    right: 20px;
+    width: 100px;
     background-color: #3b5998;
-    color: white;
+    color: white !important;
+    align-items: center;
 }
 /* #left {
     align-content: center;
@@ -98,20 +101,27 @@ body {
     position: relative;
     top: 200px;
 }
-.defriend {
+.defriend, .hint-Submit {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: #3b5998;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.panel-header {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #3b5998;
+    font-size: 20px;
 }
 
 /* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
     -webkit-transition-delay: .3s; /* Safari */
-    /* transition-delay: .3s;
-} */
-/* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
+     /* transition-delay: .3s; */
+/* } 
+.flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
 	transform: rotateY(180deg);
-} */
-/* .flip-container {
+}
+.flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
@@ -154,7 +164,7 @@ goes here */
 } */
 /* hide back of pane during swap */
 
-.back, .back2 {
+/* .back, .back2 {
   -webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -162,7 +172,7 @@ goes here */
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 /* front pane, placed above back */
 

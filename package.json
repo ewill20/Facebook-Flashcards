@@ -1,0 +1,29 @@
+{
+  "name": "defriendr",
+  "version": "1.0.0",
+  "description": "It's like tinder for your friends you don't know",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "mysql2": "^1.4.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.13.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewill20/Facebook-Flashcards.git"
+  },
+  "author": "Rebecca Preston, Chad O'Bryhim, Michael Hoppenrath, Eric Willard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewill20/Facebook-Flashcards/issues"
+  },
+  "homepage": "https://github.com/ewill20/Facebook-Flashcards#readme"
+}

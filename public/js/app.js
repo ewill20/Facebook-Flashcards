@@ -47,32 +47,33 @@ $(".btn-arrow-right").click(function() {
 // };
 
 // })
+$(document).ready(function() {
 	//add to the defriend list and view in the defriendContainer
 	var $defriendContainer = $(".defriend-container");
 	//event listeners for deleting and adding to the defriend list
 	$(document).on("click", "button.delete", deleteDefriend);
-	$(document).on("click", "#defriend-form", insertDefriend);
+	$(document).on("submit", "#defriend-form", insertDefriend);
 
 	//Defriend array
-	var defriendArray = [];
+	var defriendList = [];
 
 	//pull defriend list from database
-	// getDefriendDB();
+	getDefriendList();
 
 	//function to reset the defriend list displayed with new people to defriend from the database
 	function initializeRows() {
 		$defriendContainer.empty();
 		var rowsToAdd = [];
-		for (var i = 0; i < defriendArray.length; i++) {
-			rowsToAdd.push(createNewRow(defriendArray[i]));
+		for (var i = 0; i < defriendList.length; i++) {
+			rowsToAdd.push(createNewRow(defriendList[i]));
 		}
 		$defriendContainer.prepend(rowsToAdd);
 	}
 
 	//grabs defriend list from the database and updates to the view
 	function getDefriendList() {
-		$.get("/api/defriendArray", function(data) {
-			defriendArray = data;
+		$.get("/api/defriendList", function(data) {
+			defriendList = data;
 			initializeRows();
 		});
 	}
@@ -83,7 +84,7 @@ $(".btn-arrow-right").click(function() {
 		var id = $(this).data("id");
 		$.ajax({
 			method: "DELETE",
-			url: "/api/defriendArray/" + id
+			url: "/api/defriendList/" + id
 		}).done(getDefriendList);
 	}
 
@@ -91,10 +92,11 @@ $(".btn-arrow-right").click(function() {
 	function updateDefriend(defriend) {
 		$.ajax({
 			method: "PUT",
-			url: "/api/defriendArray",
+			url: "/api/defriendList",
 			data: defriend
 		}).done(getDefriendList);
 	}
+
 
 	//function to create new defriend row for doomed defriended fb friend
 	function createNewRow(defriend) {
@@ -118,7 +120,7 @@ $(".btn-arrow-right").click(function() {
 		return $newInputRow;
 	}
 
-	//inserts new defriended friend into database and updates the view
+	//inserts new defriended friend into database and updates
 	function insertDefriend(event) {
 		event.preventDefault();
 		var defriend = {
@@ -126,9 +128,7 @@ $(".btn-arrow-right").click(function() {
 			complete: false
 		};
 
-		$.post("/api/defriendArray", defriend, getDefriendList);
+		$.post("/api/defriendList", defriend, getDefriendList);
 		$newItemInput.val("");
 	}
-
-
-
+});

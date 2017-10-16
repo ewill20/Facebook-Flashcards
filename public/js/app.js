@@ -1,34 +1,33 @@
 $(document).ready(function() {
-<<<<<<< HEAD
     $(".back").hide();
     $(".back2").hide();
 });
 
-$(".flipper").flip({
+$("#card").flip({
     trigger: 'manual'
 
 });
 
 $(".btn-arrow-left").click(function(){
-    $(".flipper").flip({reverse: true});
-    $(".flipper").flip('toggle',
-    function () {
-        alert("it's flipped");
+    $("#card").flip({reverse: true});
+    $("#card").flip('toggle', function() {
+        $(".back2").show("toggle");
+        $("#backSubmit").show("toggle");
     });
-    $(".back2").show();
-    $(".btn-arrow-left").on("toggle", function() {
-        $(".back2").hide();
-    })
-    });
+    
+    // $(".btn-arrow-left").on("toggle", function() {
+    //     $(".back2").hide();
+    // })
+});
 
 
 $(".btn-arrow-right").click(function() {
-    $(".flipper").flip({reverse: false});
-    $(".flipper").flip('toggle');
-    $(".back").show();
-    $(".btn-arrow-right").on("toggle", function() {
-        $('.back').hide();
-    })
+    $("#card").flip({reverse: false});
+    $("#card").flip('toggle');
+    // $(".back").show();
+    // $(".btn-arrow-right").on("toggle", function() {
+    //     $('.back').hide();
+    // })
 });
 
 // $(".btn-arrow-left").on("click", function() {
@@ -48,7 +47,6 @@ $(".btn-arrow-right").click(function() {
 // };
 
 // })
-=======
 	//add to the defriend list and view in the defriendContainer
 	var $defriendContainer = $(".defriend-container");
 	//event listeners for deleting and adding to the defriend list
@@ -59,7 +57,7 @@ $(".btn-arrow-right").click(function() {
 	var defriendArray = [];
 
 	//pull defriend list from database
-	getDefriendDB();
+	// getDefriendDB();
 
 	//function to reset the defriend list displayed with new people to defriend from the database
 	function initializeRows() {
@@ -133,5 +131,4 @@ $(".btn-arrow-right").click(function() {
 	}
 
 
-});
->>>>>>> d4f906a9c50d368d6e16bf1989d0937437d9f0d2
+

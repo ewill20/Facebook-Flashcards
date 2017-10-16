@@ -6,11 +6,13 @@ var path = require("path");
 module.exports = function(app) {
 	//get route for html
 	app.get("/", function(request, result) {
-		result.sendFile(path.join(__dirname + "/../public/home.html"));
+		result.sendFile(path.join(__dirname + "/../defriendr2.html"));
+		console.log("Sending User home");
 	});
 	//get route for flashcard html
 	app.get("/flashcard", function(request, result) {
-		result.sendFile(path.join(__dirname + "/../defriendr.html"));
+		result.sendFile(path.join(__dirname + "/../defriendr2.html"));
+		console.log("sending User to Flashcard")
 	});
 	//GET route for getting all of the defrienders
 	app.get("/api/defriendList", function(req, res) {
@@ -18,12 +20,13 @@ module.exports = function(app) {
 		db.Defriend.findAll({}).then(function(dbDefriend) {
 			//access to the defriend list as an argument inside of the callback funciton
 			res.json(dbDefriend);
+			console.log("user is going to api defriend list")
 		});
 	});
 
 	//POST route for saving a defriended facebook friend
 	app.post("/api/defriendList", function(req, res) {
-		//create is taking an argument of an object describing the item we want to 
+		//create is taking an argument of an object describing the item we want to
 		//insert into the table. In this case we just pass in an object
 		//with a text and complete property
 		db.Defriend.create({
@@ -32,6 +35,7 @@ module.exports = function(app) {
 		}).then(function(dbDefriend) {
 			//access to the new defriend as an argument inside of the callback function
 			res.json(dbDefriend);
+			console.log("Positing to defriend list API")
 		})
 		.catch(function(err) {
 			res.json(err);

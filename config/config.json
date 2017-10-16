@@ -2,7 +2,7 @@
     "development": {
         "username": "root",
         "password": null,
-        "database": "defriend_list",
+        "database": "dbDefriend",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },

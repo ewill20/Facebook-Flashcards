@@ -103,9 +103,7 @@ body {
     color: #3b5998;
     text-align: center;
 }
-#defriend-Button {
-    display: none;
-}
+
 /* .flip-container.active .flipper, .flip-container.active .flipper, .flip-container.flip .flipper {
     -webkit-transition-delay: .3s; /* Safari */
     /* transition-delay: .3s;

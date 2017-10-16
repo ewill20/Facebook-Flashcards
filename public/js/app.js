@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".back").hide();
     $(".back2").hide();
-    $(".defriend-Button").hide();
+
 });
 
 $(".flipper").flip({

@@ -1,5 +1,6 @@
 var fb = require("fbScripts.js");
 
-$("#test-element").click(function() {
-    fb.login()
+$("#loginButton").click(function() {
+    fb.login();
+    console.log("trying to log on")
 });

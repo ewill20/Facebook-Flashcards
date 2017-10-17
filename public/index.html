@@ -21,6 +21,11 @@
 
 <body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy"
   data-offset="15">
+
+  <!-- for the facebook Api-->
+  <script type="text/javascript" src="/js/backsideContent.js"></script>
+  <script type="text/javascript" src="/js/appscript.js"> </script>
+
   <!-- Navbar-->
   <nav class="navbar fixed-top navbar-expand-md blue-gradient navbar-dark double-nav scrolling-navbar">
     <!-- SideNav slide-out button -->
@@ -29,14 +34,32 @@
     <ul class="nav navbar-nav nav-flex-icons ml-auto">
       <!-- Dynamic content wrapper -->
       <li id="dynamicContentWrapper-mainNavbar" class="nav-item"> </li>
+      <!-- Login -->
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-facebook-official"></i></i><span class="clearfix d-none d-sm-inline-block">Log In</span></a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+              <div class="col-md-12 md-form">Login via
+                <button type="button" href="#" class="btn btn-outline-primary btn-rounded waves-effect"><i class="fa fa-facebook left"></i><span class="clearfix d-none d-sm-inline-block"> Facebook</span></button>
+                </div>
+              <div class="md-form">
+                <input type="email" class="inputtext" id="email-label" name="email" id="email" tabindex="1" data-testid="royal_email">
+                <label for="Form-email4">Your email</label>
+              </div>
+              <div class="md-form pb-3">
+                <input type="password" class="inputtext" id="password-label" name="pass" id="password" tabindex="2" data-testid="royal_pass">
+                <label for="Form-pass4">Your password</label>
+              </div>
+              <div class="text-center mb-4">
+                <button type="button submit" id="loginButton" class="btn btn-outline-danger btn-rounded waves-effect z-depth-2">Log in</button>
+              </div>
+          </div>
+      </li>
       <!-- About -->
       <li id="navbar-static-about" class="nav-item "> <a href="#" class="nav-link"><i class="fa fa-info-circle mr-1"></i><span class="clearfix d-none d-sm-inline-block">About</span></a>        </li>
       <!-- Github -->
       <li id="navbar-static-github" class="nav-item "> <a href="https://github.com/ewill20/Facebook-Flashcards" class="nav-link"><i class="fa fa-github mr-1"></i><span class="clearfix d-none d-sm-inline-block">Github</span></a>        </li>
       <!-- Friend Results -->
       <li id="navbar-static-github" class="nav-item "> <a href="#" class="nav-link"><i class="fa fa-users mr-1"></i><span class="clearfix d-none d-sm-inline-block">Lists</span></a>        </li>
-      <!-- Login / register -->
-      <li class="nav-item "><a href="#" id="navbar-static-login" class="nav-link"><i class="fa fa-facebook-official mr-1"></i><span class="clearfix d-none d-sm-inline-block">Log In</span></a>        </li>
     </ul>
   </nav>
   <!-- /.Navbar-->
@@ -157,9 +180,6 @@
   <script src="js/app.js" type="text/javascript"></script>
   <script type="text/javascript" src="/js/appscript.js"> </script>
 
-  <!--for the facebook Api-->
-  <script type="text/javascript" src="/js/backsideContent.js"></script>
-  <script type="text/javascript" src="/js/appscript.js"> </script>
   <!--  -->
 
 </body>

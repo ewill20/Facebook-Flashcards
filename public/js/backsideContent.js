@@ -1,8 +1,8 @@
 function determineDisplay() {
     const display = () => {
     if (".btn-arrow-left") {
-    return (
-        `<div class="back">
+    return (`
+        <div class="back">
         <div class="panel panel-default backside-hints">
             <div class="panel panel-header hints">
                 Hints
@@ -19,8 +19,8 @@ function determineDisplay() {
         </div>
     </div>`);
 } else {
-    return (
-        `<div class="back2">
+    return (`
+        <div class="back2">
                 <div class="panel panel-default backside-defriend">
                     <div class="panel panel-header defriend">
                         defriend Options

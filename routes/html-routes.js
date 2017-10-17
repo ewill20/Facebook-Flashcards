@@ -6,7 +6,7 @@ var path = require("path");
 module.exports = function(app) {
 	//get route for html
 	app.get("/", function(request, result) {
-		result.sendFile(path.join(__dirname + "/../defriendr.html"));
+		result.sendFile(path.join(__dirname + "/../public"));
 		console.log("Sending User home");
 	});
 	//get route for flashcard html

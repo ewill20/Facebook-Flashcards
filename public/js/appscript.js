@@ -1,6 +1,6 @@
 window.fbAsyncInit = function() {
   FB.init({
-    appId            : '127978641257570',
+    appId            : 'your-app-id',
     autoLogAppEvents : true,
     xfbml            : true,
     version          : 'v2.10'
@@ -12,7 +12,7 @@ window.fbAsyncInit = function() {
    var js, fjs = d.getElementsByTagName(s)[0];
    if (d.getElementById(id)) {return;}
    js = d.createElement(s); js.id = id;
-  //  js.src = "//connect.facebook.net/en_US/sdk.js";
+   js.src = "//connect.facebook.net/en_US/sdk.js";
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
@@ -100,7 +100,6 @@ function feedPost(defriendArray){
        } else {
         console.log('User cancelled login or did not fully authorize.');
        }
-     console.log("trying to log on");
    });
  });
 //Right now this function goes to a dead end until a new person button is added

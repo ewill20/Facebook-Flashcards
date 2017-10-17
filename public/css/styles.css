@@ -13,7 +13,7 @@ body {
 .navbar {
     padding-bottom: 30px;
     padding-top: 40px;
-    background-color: #3b5998;
+    background-color: #3b5998 !important;
 }
 #favicon-brand {
     position: relative;

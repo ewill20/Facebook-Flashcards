@@ -2,58 +2,46 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>defriender</title>
-  <link rel='stylesheet' id='ajax-auth-style-css' href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/ajax-auth-style.css?ver=4.8.2'
-    type='text/css' media='all' />
-  <link rel='stylesheet' id='compiled.css-css' href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0'
-    type='text/css' media='all' />
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>defriender</title>
+    <link rel='stylesheet' id='ajax-auth-style-css' href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/ajax-auth-style.css?ver=4.8.2'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='compiled.css-css' href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0'
+        type='text/css' media='all' />
     <!-- favicon link -->
-    <link rel="icon" type="image/ico" href="favicons/favicon.ico">
+    <link rel="icon" type="image/ico" href="assets/favicons/favicon.ico">
     <!-- FontAwesome Icons CDN -->
     <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/styles.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy"
-  data-offset="15">
+<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
 
-  <!-- for the facebook Api-->
-  <script type="text/javascript" src="/js/backsideContent.js"></script>
-  <script type="text/javascript" src="/js/appscript.js"> </script>
+    <!-- for the facebook Api-->
+    <!-- <script type="text/javascript" src="js/backsideContent.js"></script> -->
+    <script type="text/javascript" src="js/appscript.js">
 
-<<<<<<< HEAD
-    <div class="container">
-        <div class="row align-items-center main-content">
-            <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8 col-xl-8 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2">
-                  <p class="login-Message">
-                      Please Login With Your Facebook<br> Account To Use Defriendr
-                  </p>
-            <!-- <div class="col-4 spacer">
-                bullshit
-            </div> -->
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2">
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-arrow-left">
-                    <span class="glyphicon glyphicon-menu-left" </span>
-                </button>
-                <!-- ontouchstart="this.classList.toggle('active');" -->
-            </div>
-            <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 align-items-center">
-                <div id="card">
-                    <div class="front">
-                        <div class="panel panel-default text-center flashcard">
-                            <div class="panel panel-header friend-name">
-                                Name
-                            </div>
-                            <div class="panel panel-body profile-photo">
-                                <img id="profile-picture" src="" alt="friend's-profile-photo">
-                            </div>
-                        </div>
+    </script>
+ <!-- Navbar-->
+ <nav class="navbar fixed-top navbar-expand-md blue-gradient navbar-dark double-nav scrolling-navbar">
+        <!-- SideNav slide-out button -->
+        <div class="float-left"> <a href="#" class="button-collapse"><i class="fa"></i><span> defriendr</span></a>      </div>
+        <!--Navigation icons-->
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+          <!-- Dynamic content wrapper -->
+          <li id="dynamicContentWrapper-mainNavbar" class="nav-item"> </li>
+          <!-- Login -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-facebook-official"></i></i><span class="clearfix d-none d-sm-inline-block">Log In</span></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="col-md-12 md-form">Login via
+                    <button type="button" href="#" class="btn btn-outline-primary btn-rounded waves-effect"><i class="fa fa-facebook left"></i><span class="clearfix d-none d-sm-inline-block"> Facebook</span></button>
                     </div>
+<<<<<<< HEAD
                     <div class="back">
                         <div class="panel panel-default backside-hints">
                             <div class="panel panel-header hints text-center">
@@ -166,108 +154,166 @@
                           <label for="form1" class="">Who is this?</label>
                       </div>
                       <!--Triggering button--><a class="rotate-btn" data-card="card-2"><i class="fa fa-repeat"></i> Flip for hints and actions</a>                      </div>
-                  </div>
-                  <!--Front Side-->
-                  <!--Back Side-->
-                  <div class="face back">
-                    <!--Content-->
-                    <h4 class="mt-2 mb-2">Hints</h4>
-                    <hr>
-                    <br>user_hometown
-                    <br>user_location
-                    <br>user_mutual_friends
-                    <br>user_mutual_likes
-                    <hr>
-                    <!--Social Icons-->
-                    <ul class="inline-ul" style="padding:0;">
-                      <li><a class="icons-sm" id="user_poke"><i class="fa fa-hand-o-left"></i></a></li>
-                      <li><a class="icons-sm" id="user_wallpost"><i class="fa fa-pencil-square-o"></i></a></li>
-                      <li><a class="icons-sm" id="user_message"><i class="fa fa-envelope-o"></i></a></li>
-                      <br><li><a class="icons-sm" id="user_block"><i class="fa fa-ban"></i><span> Add to block list</span></a></li>
-                      <br><li><a class="icons-sm" id="user_defriend"><i class="fa fa-times-circle"></i><span> Add to defriend list</span></a></li>
-                    </ul>
-                    <!--Triggering button--><a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Flip back to guess</a>                    </div>
-                  <!--Back Side-->
-                </div>
-<<<<<<< HEAD
 =======
+                  <div class="md-form">
+                    <input type="email" class="inputtext" id="email-label" name="email" id="email" tabindex="1" data-testid="royal_email">
+                    <label for="Form-email4">Your email</label>
+                  </div>
+                  <div class="md-form pb-3">
+                    <input type="password" class="inputtext" id="password-label" name="pass" id="password" tabindex="2" data-testid="royal_pass">
+                    <label for="Form-pass4">Your password</label>
+                  </div>
+                  <div class="text-center mb-4">
+                    <button type="button submit" id="loginButton" class="btn btn-outline-info btn-rounded waves-effect z-depth-2">Log in</button>
+>>>>>>> 7a0f77bc441538ce5014506a57e34ec1192e0e1b
+                  </div>
               </div>
-              <!--Rotating card-->
->>>>>>> refs/remotes/origin/master
-            </div>
-            <!--Grid column middle-->
-            <!--Grid column right-->
-            <div class="col-lg-4 col-md-12"> </div>
-            <!--Grid column right-->
-          </div>
-          <!--Grid row-->
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column left-->
-            <div class="col-lg-4 col-md-12"> </div>
-            <!--Grid column left-->
-            <!--Grid column middle-->
-            <div class="col-lg-4 col-md-12 card-body text-center">
-            <button type="button" class="btn aqua-gradient btn-primary btn-rounded waves-effect">Guess</button>
-            <button type="button" class="btn orange-gradient btn-secondary btn-rounded waves-effect">Skip</button>
-          </div>
-          <!--Grid column middle-->
-          <!--Grid column right-->
-          <div class="col-lg-4 col-md-12"> </div>
-          <!--Grid column right-->
-        </div>
-        <!--Grid row-->
-        </section>
-        <!--Section: Cards-->
-        </section>
-      </div>
-      <!--/Fourth column-->
-    </div>
-    <!--/First row-->
-    </section>
-    <!--/Section: More-->
-    </div>
-    </section>
-    <!--Category content-->
-    </div>
-    <!--/.Main column-->
-    <div class="col-md-12"> </div>
-    </div>
-    </div>
-  </main>
-  <!-- /.Main layout-->
+          </li>
+          <!-- About -->
+          <li id="navbar-static-about" class="nav-item "> <a href="#" class="nav-link"><i class="fa fa-info-circle mr-1"></i><span class="clearfix d-none d-sm-inline-block">About</span></a>        </li>
+          <!-- Github -->
+          <li id="navbar-static-github" class="nav-item "> <a href="https://github.com/ewill20/Facebook-Flashcards" class="nav-link"><i class="fa fa-github mr-1"></i><span class="clearfix d-none d-sm-inline-block">Github</span></a>        </li>
+          <!-- Friend Results -->
+          <li id="navbar-static-github" class="nav-item "> <a href="#" class="nav-link"><i class="fa fa-users mr-1"></i><span class="clearfix d-none d-sm-inline-block">Lists</span></a>        </li>
+        </ul>
+      </nav>
+      <!-- /.Navbar-->
+ <!-- Main layout-->
+ <main>
+     <div class="main-wrapper">
+         <!--Main column-->
+         <div class="col-md-12">
+             <!--Category content-->
+             <section>
+                 <!--Grid row-->
+                 <div class="row">
+                     <!--Grid column left-->
+                     <div class="col-lg-4 col-md-12"> </div>
+                     <!--Grid column left-->
+                     <!--Grid column middle-->
+                     <div class="col-lg-4 col-md-12">
+                         <!--Rotating card-->
+                         <div class="card-wrapper">
+                             <div id="card-2" class="card-rotating effect__click">
+                                 <!--Front Side-->
+                                 <div class="face front">
+                                     <!-- Image-->
+                                     <div class="card-up"> <img id="cover-photo" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+                                             alt="cover photo"> </div>
+                                     <!--Avatar-->
+                                     <div class="avatar"> <img id="profile-picture" src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg"
+                                             class="rounded-circle img-responsive" alt="profile picture">                                                                </div>
+                                     <!--Content-->
+                                     <div class="card-body">
+                                         <h6 class="mt-1 name" id="user_name">user_name</h6>
+                                         <div class="md-form">
+                                             <input type="text" id="form1" class="form-control">
+                                             <label for="form1" class="">Who is this?</label>
+                                         </div>
+                                         <!--Triggering button--><a class="rotate-btn" data-card="card-2"><i class="fa fa-repeat"></i> Flip for hints and actions</a>                                                                </div>
+                                 </div>
+                                 <!--Front Side-->
+                                 <!--Back Side-->
+                                 <div class="face back">
+                                     <!--Content-->
+                                     <h4 class="mt-2 mb-2">Hints</h4>
+                                     <hr>
+                                     <br>user_hometown
+                                     <br>user_location
+                                     <br>user_mutual_friends
+                                     <br>user_mutual_likes
+                                     <hr>
+                                     <!--Social Icons-->
+                                     <ul class="inline-ul" style="padding:0;">
+                                         <li><a class="icons-sm" id="user_poke"><i class="fa fa-hand-o-left"></i></a></li>
+                                         <li><a class="icons-sm" id="user_wallpost"><i class="fa fa-pencil-square-o"></i></a></li>
+                                         <li><a class="icons-sm" id="user_message"><i class="fa fa-envelope-o"></i></a></li>
+                                         <br>
+                                         <li><a class="icons-sm" id="user_block"><i class="fa fa-ban"></i><span> Add to block list</span></a></li>
+                                         <br>
+                                         <li><a class="icons-sm" id="user_defriend"><i class="fa fa-times-circle"></i><span> Add to defriend list</span></a></li>
+                                     </ul>
+                                     <!--Triggering button--><a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Flip back to guess</a>                                                            </div>
+                                 <!--Back Side-->
+                             </div>
+                         </div>
+                         <!--Rotating card-->
+                     </div>
+                     <!--Grid column middle-->
+                     <!--Grid column right-->
+                     <div class="col-lg-4 col-md-12"> </div>
+                     <!--Grid column right-->
+                 </div>
+                 <!--Grid row-->
+                 <!--Grid row-->
+                 <div class="row">
+                     <!--Grid column left-->
+                     <div class="col-lg-4 col-md-12"> </div>
+                     <!--Grid column left-->
+                     <!--Grid column middle-->
+                     <div class="col-lg-4 col-md-12 card-body text-center">
+                         <button type="button" class="btn aqua-gradient btn-primary btn-rounded waves-effect">Guess</button>
+                         <button type="button" class="btn orange-gradient btn-secondary btn-rounded waves-effect">Skip</button>
+                     </div>
+                     <!--Grid column middle-->
+                     <!--Grid column right-->
+                     <div class="col-lg-4 col-md-12"> </div>
+                     <!--Grid column right-->
+                 </div>
+                 <!--Grid row-->
+             </section>
+             <!--Section: Cards-->
+             </section>
+         </div>
+         <!--/Fourth column-->
+     </div>
+     <!--/First row-->
+     </section>
+     <!--/Section: More-->
+</div>
+</section>
+<!--Category content-->
+</div>
+<!--/.Main column-->
+<div class="col-md-12"> </div>
+</div>
+</div>
+</main>
+<!-- /.Main layout-->
+   
+                       
 
-  <!-- SCRIPTS -->
-  <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.4.0'></script>
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-  <!-- FLip js -->
-  <!--script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script-->
-  <!-- Bootstrap tooltips -->
-  <!--script type="text/javascript" src="assets/MDB/js/popper.min.js"></script-->
-  <!-- Bootstrap core JavaScript -->
-  <!--script type="text/javascript" src="assets/MDB/js/bootstrap.min.js"></script-->
-  <!-- MDB core JavaScript -->
-  <!--script type="text/javascript" src="assets/MDB/js/mdb.min.js"></script>
-  <script src="js/app.js" type="text/javascript"></script>
-  <script type="text/javascript" src="/js/appscript.js"> </script>
+        <!-- SCRIPTS -->
+        <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.4.0'></script>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <!--FLip js -->
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="assets/MDB/js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="assets/MDB/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="assets/MDB/js/mdb.min.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/appscript.js">
 
-  <!--  -->
+        </script>
 
-<<<<<<< HEAD
+
+
 
 
         <!-- SCRIPTS -->
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="MDB/js/popper.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>       
         <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../MDB/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
+<<<<<<< HEAD
         <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
         <script src="public/js/app.js" type="text/javascript"></script>
         <script src="server.js" type="text/javascript"></script>
@@ -275,6 +321,15 @@
 
 =======
 >>>>>>> refs/remotes/origin/master
+=======
+        <script type="text/javascript" src="../MDB/js/mdb.min.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="../server.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/appscript.js">
+
+        </script>
+
+>>>>>>> 7a0f77bc441538ce5014506a57e34ec1192e0e1b
 </body>
 
 </html>

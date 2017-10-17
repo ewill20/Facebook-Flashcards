@@ -1,7 +1,7 @@
 body {
     margin: none;
     background-color: white;
-    background: url("../../images/white-texture-background.jpg");
+    background: url("../../public/assets/images/white-texture-background.jpg");
     background-size: cover;
 }
 .profile-photo {

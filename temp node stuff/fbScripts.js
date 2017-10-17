@@ -114,7 +114,3 @@ var fbPackaging = {
 
     }
 };
-
-
-
-module.exports = fbPackaging;

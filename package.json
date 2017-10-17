@@ -7,11 +7,15 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "fs": "0.0.1-security",
+<<<<<<< HEAD
     "json": "^9.0.6",
+=======
+    "mysql": "^2.15.0",
+>>>>>>> refs/remotes/origin/master
     "mysql2": "^1.4.2",
     "node": "^8.3.0",
     "path": "^0.12.7",
-    "sequelize": "^4.13.17"
+    "sequelize": "^4.14.0"
   },
   "devDependencies": {},
   "scripts": {

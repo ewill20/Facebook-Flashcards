@@ -10,10 +10,14 @@ $(".btn-arrow-right").click(function() {
     $(".back").show(".different-hints");
     $(".flipper").flip({reverse: false});
     $(".flipper").flip('toggle');
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/master
     $(".btn-arrow-right").on("toggle", function() {
         $('.back').hide();
         $(".back2").hide();
-        
+
     })
 });
 
@@ -24,11 +28,61 @@ $(".btn-arrow-right").click(function() {
         $(".back2").show(".different-Options");
         $(".btn-arrow-left").on("toggle", function() {
             $(".back2").hide();
-            $(".back").hide();  
+            $(".back").hide();
     })
     });
+<<<<<<< HEAD
    
 
+=======
+
+
+
+$("#card").flip({
+    trigger: 'manual'
+
+});
+
+$(".btn-arrow-left").click(function(){
+    $("#card").flip({reverse: true});
+    $("#card").flip('toggle', function() {
+        $(".back2").show("toggle");
+        $("#backSubmit").show("toggle");
+    });
+
+    // $(".btn-arrow-left").on("toggle", function() {
+    //     $(".back2").hide();
+    // })
+});
+
+
+$(".btn-arrow-right").click(function() {
+    $("#card").flip({reverse: false});
+    $("#card").flip('toggle');
+    // $(".back").show();
+    // $(".btn-arrow-right").on("toggle", function() {
+    //     $('.back').hide();
+    // })
+});
+
+// $(".btn-arrow-left").on("click", function() {
+//     display();
+
+// $(".btn-arrow-right").on("click", function() {
+//     display();
+// })
+
+// function display() {
+//     if(".btn-arrow-left") {
+//         $(".back").html();
+//     }
+//     if(".btn-arrow-right") {
+//         $(".back2").html();
+//     }
+// };
+
+// })
+>>>>>>> refs/remotes/origin/master
 $(document).ready(function() {
 	//add to the defriend list and view in the defriendContainer
 	var $defriendContainer = $(".defriend-container");

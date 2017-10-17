@@ -2,7 +2,6 @@ $(document).ready(function() {
     $(".back").hide();
     $(".back2").hide();
 });
-<<<<<<< HEAD
     $(".flipper").flip({
         trigger: 'manual'
 });
@@ -11,11 +10,11 @@ $(".btn-arrow-right").click(function() {
     $(".back").show(".different-hints");
     $(".flipper").flip({reverse: false});
     $(".flipper").flip('toggle');
-    
+
     $(".btn-arrow-right").on("toggle", function() {
         $('.back').hide();
         $(".back2").hide();
-        
+
     })
 });
 
@@ -26,11 +25,11 @@ $(".btn-arrow-right").click(function() {
         $(".back2").show(".different-Options");
         $(".btn-arrow-left").on("toggle", function() {
             $(".back2").hide();
-            $(".back").hide();  
+            $(".back").hide();
     })
     });
-   
-=======
+
+
 
 $("#card").flip({
     trigger: 'manual'
@@ -43,7 +42,7 @@ $(".btn-arrow-left").click(function(){
         $(".back2").show("toggle");
         $("#backSubmit").show("toggle");
     });
-    
+
     // $(".btn-arrow-left").on("toggle", function() {
     //     $(".back2").hide();
     // })
@@ -64,12 +63,12 @@ $(".btn-arrow-right").click(function() {
 
 // $(".btn-arrow-right").on("click", function() {
 //     display();
-// })    
+// })
 
 // function display() {
 //     if(".btn-arrow-left") {
 //         $(".back").html();
-//     } 
+//     }
 //     if(".btn-arrow-right") {
 //         $(".back2").html();
 //     }
@@ -161,4 +160,3 @@ $(document).ready(function() {
 		$newItemInput.val("");
 	}
 });
->>>>>>> master

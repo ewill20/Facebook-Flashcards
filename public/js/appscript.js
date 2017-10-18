@@ -19,9 +19,9 @@ window.fbAsyncInit = function() {
 //picks a random friend
 
 function friend() {
-  FB.api('/me/friends', function(response) {
+  FB.api('/me/name', function(response) {
       if(response.data) {
-        console.log(response)
+        console.log(response);
       } else {
           alert("Error!");
       }

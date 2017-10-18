@@ -22,7 +22,7 @@ function friend() {
   FB.api(
   '/me/',
   'GET',
-  {"fields":"friends{id}"},
+  {"fields":"friends"},
   function(response) {
       // Insert your code here
       console.log(response);

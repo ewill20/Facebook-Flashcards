@@ -104,7 +104,7 @@ function feedPost(defriendArray){
 //Right now this function goes to a dead end until a new person button is added
  $("#newGuy").click(function() {
    var packet = friend();
-   console.log(packer);
+   console.log(packet);
    $.post("/api/defriendList", function(packet, status){
        console.log("Data: " + packet + "\nStatus: " + status);
    });

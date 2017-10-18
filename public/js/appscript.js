@@ -17,10 +17,13 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 
 //picks a random friend
+
 function friend() {
   FB.api(
       //makes a call to pull a list of names and id
-      "/{friend-list-id}",
+      '/me/',
+      'GET',
+      {"fields":"friends{id}"},
       function (response) {
         if (response && !response.error) {
           //the path to the summery count

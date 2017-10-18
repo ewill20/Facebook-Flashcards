@@ -10,10 +10,7 @@ $(".btn-arrow-right").click(function() {
     $(".back").show(".different-hints");
     $(".flipper").flip({reverse: false});
     $(".flipper").flip('toggle');
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
     $(".btn-arrow-right").on("toggle", function() {
         $('.back').hide();
         $(".back2").hide();
@@ -31,10 +28,6 @@ $(".btn-arrow-right").click(function() {
             $(".back").hide();
     })
     });
-<<<<<<< HEAD
-   
-
-=======
 
 
 
@@ -82,7 +75,7 @@ $(".btn-arrow-right").click(function() {
 // };
 
 // })
->>>>>>> refs/remotes/origin/master
+
 $(document).ready(function() {
 	//add to the defriend list and view in the defriendContainer
 	var $defriendContainer = $(".defriend-container");

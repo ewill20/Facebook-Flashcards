@@ -19,13 +19,12 @@ window.fbAsyncInit = function() {
 //picks a random friend
 
 function friend() {
-  FB.api(
-  '/me/',
-  'GET',
-  {"fields":"friends"},
-  function(response) {
-      // Insert your code here
-      console.log(response);
+  FB.api('/me/friends', function(response) {
+      if(response.data) {
+        console.log(response)
+      } else {
+          alert("Error!");
+      }
   });
 };
 //pulls their info

@@ -26,7 +26,7 @@ function friend() {
   function(response) {
       // Insert your code here
       console.log(response);
-  };
+  });
 };
 //pulls their info
 function randoInfo(defriendID){

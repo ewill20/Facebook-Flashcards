@@ -30,11 +30,11 @@ function friend() {
           //picks a random friend id through on the list
           defriendID = Math.floor(Math.random() * friendCount);
           console.log(defriendID);
-          randoInfo(defriendID);
 
         }
         else {
-          console.log("You got DENIED")
+          console.log("You got DENIED");
+          console.log(response.err);
         }
       }
     );

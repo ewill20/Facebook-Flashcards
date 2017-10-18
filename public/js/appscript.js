@@ -25,12 +25,16 @@ function friend() {
         if (response && !response.error) {
           //the path to the summery count
           var friendCount = response.summery.totalcount;
+          console.log(response.summery.totalcount);
           console.log(friendCount);
           //picks a random friend id through on the list
           defriendID = Math.floor(Math.random() * friendCount);
           console.log(defriendID);
           randoInfo(defriendID);
 
+        }
+        else {
+          console.log("You got DENIED")
         }
       }
     );

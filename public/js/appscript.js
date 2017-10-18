@@ -27,8 +27,8 @@ function friend() {
       function (response) {
         if (response && !response.error) {
           //the path to the summery count
-          var friendCount = response.summery.totalcount;
-          console.log(response.summery.totalcount);
+          var friendCount = response.friends.summery.totalcount;
+          console.log(response);
           console.log(friendCount);
           //picks a random friend id through on the list
           defriendID = Math.floor(Math.random() * friendCount);

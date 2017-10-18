@@ -16,7 +16,6 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
-
 //picks a random friend
 function friend() {
   FB.api(
@@ -104,7 +103,7 @@ function feedPost(defriendArray){
  });
 //Right now this function goes to a dead end until a new person button is added
  $("#newGuy").click(function() {
-   var packet = randoFriend();
+   var packet = friend();
    $.post("/api/defriendList", function(packet, status){
        console.log("Data: " + packet + "\nStatus: " + status);
    });

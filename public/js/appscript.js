@@ -33,6 +33,7 @@ function friend() {
           //picks a random friend id through on the list
           defriendID = Math.floor(Math.random() * friendCount);
           console.log(defriendID);
+          return defriendID;
 
         }
         else {
@@ -112,7 +113,4 @@ function feedPost(defriendArray){
  $("#newGuy").click(function() {
    var packet = friend();
    console.log(packet);
-   $.post("/api/defriendList", function(packet, status){
-       console.log("Data: " + packet + "\nStatus: " + status);
-   });
  })

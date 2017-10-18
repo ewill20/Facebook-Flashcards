@@ -20,28 +20,13 @@ window.fbAsyncInit = function() {
 
 function friend() {
   FB.api(
-      //makes a call to pull a list of names and id
-      '/me/',
-      'GET',
-      {"fields":"friends{id}"},
-      function (response) {
-        if (response && !response.error) {
-          //the path to the summery count
-          console.log(response);
-          var friendCount = response.friends.summery.totalcount;
-          console.log(friendCount);
-          //picks a random friend id through on the list
-          defriendID = Math.floor(Math.random() * friendCount);
-          console.log(defriendID);
-          return defriendID
-
-        }
-        else {
-          console.log("You got DENIED");
-          console.log(response.err);
-        }
-      }
-    );
+  '/me/',
+  'GET',
+  {"fields":"friends{id}"},
+  function(response) {
+      // Insert your code here
+      console.log(response);
+  };
 };
 //pulls their info
 function randoInfo(defriendID){

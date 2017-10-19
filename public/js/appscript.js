@@ -16,6 +16,7 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
+
 //picks a random friend
 
 function friend() {
@@ -95,6 +96,13 @@ function feedPost(defriendArray){
  });
 //Right now this function goes to a dead end until a new person button is added
  $("#newGuy").click(function() {
+<<<<<<< HEAD
    var packet = friend();
    console.log(packet);
+=======
+   var packet = randoFriend();
+   $.post("/api/defriendList", function(packet, status){
+       console.log("Data: " + packet + "\nStatus: " + status);
+   });
+>>>>>>> parent of cd1680f... Skip generates first person
  })

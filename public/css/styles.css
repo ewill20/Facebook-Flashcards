@@ -226,3 +226,9 @@ and (max-device-width: 1199px)
 #backSubmit {
     z-index: 2 !important;
 }
+footer {
+    position: absolute;
+    height: 4em;
+    width: 100%;
+    bottom: 0px;
+}

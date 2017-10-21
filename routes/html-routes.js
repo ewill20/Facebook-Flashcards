@@ -15,7 +15,7 @@ module.exports = function(app) {
 		console.log("sending User to Flashcard")
 	});
 	//GET route for getting all of the defrienders
-	app.get("/api/defriendList", function(req, res) {
+	app.get("/api/tweet", function(req, res) {
 		//findAll returns all entries for a table when used with no options
 		db.Defriend.findAll({}).then(function(dbDefriend) {
 			//access to the defriend list as an argument inside of the callback funciton
@@ -25,7 +25,7 @@ module.exports = function(app) {
 	});
 
 	//POST route for saving a defriended facebook friend
-	app.post("/api/defriendList", function(req, res) {
+	app.post("/api/tweet", function(req, res) {
 		//create is taking an argument of an object describing the item we want to
 		//insert into the table. In this case we just pass in an object
 		//with a text and complete property

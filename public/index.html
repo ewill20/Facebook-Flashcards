@@ -37,7 +37,8 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-facebook-official"></i></i><span class="clearfix d-none d-sm-inline-block">Log In</span></a>
               <div class="dropdown-menu dropdown-menu-right dropdown-unique dropdown-toggle" aria-labelledby="navbarDropdownMenuLink">
                   <div class="col-md-12">Login via
-                    <button type="button" href="#" class="btn btn-outline-primary btn-rounded waves-effect"><i class="fa fa-facebook left"></i><span class="clearfix d-none d-sm-inline-block"> Facebook</span></button>
+                    <input type="text" id="loginForm" class="form-control">
+                    <button type="button" href="#" id="loginButton"class="btn btn-outline-primary btn-rounded waves-effect"><span class="clearfix d-none d-sm-inline-block">With your Twitter Handle </span></button>
                     </div>
               </div>
           </li>
@@ -90,10 +91,7 @@
                                      <!--Content-->
                                      <h4 class="mt-2 mb-2">Hints</h4>
                                      <hr>
-                                     <br>user_hometown
-                                     <br>user_location
-                                     <br>user_mutual_friends
-                                     <br>user_mutual_likes
+                                     <div id="tweetsHolder"></div>
                                      <hr>
                                      <!--Social Icons-->
                                      <ul class="inline-ul" style="padding:0;">
